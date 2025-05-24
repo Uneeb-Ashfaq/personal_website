@@ -15,6 +15,8 @@ body {
     display: flex;
     flex-direction: column; 
     align-items: center; 
+    background-color: #121212; /* Black-Gray */
+    color: #D1D1D1; /* Soft White */
 }
 
 /* General styles for all <a> links */
@@ -27,6 +29,8 @@ a {
     text-align: center;
     padding: 30px; 
     width: 100%;
+    background-color: #1F2A30; /* Deep Greenish Gray */
+    border-bottom: 2px solid #1F6F52; /* Emerald Green */
 }
 
 .skills-section {
@@ -34,11 +38,14 @@ a {
     margin-bottom: 50px;
     margin-top: 50px;
     width: 100%;
+    background-color: #1F2A30;
+    border: 2px solid #1F6F52; 
 
 }
 
 .skills-section h2 {
     margin-top: 10px;
+    
 }
 
 .skills-container {
@@ -58,6 +65,9 @@ a {
     margin-bottom: 20px;
     border-radius: 10px;
     font-weight: 600;
+    background-color: #1F6F52; 
+    color: #ffffff;
+    border: 2px solid #2A9D8F; 
     
 }
 
@@ -95,35 +105,6 @@ a {
     justify-content: space-between;
     align-items: center; 
 }
-
-
-/* Background & Text */
-body {
-    background-color: #121212; /* Black-Gray */
-    color: #D1D1D1; /* Soft White */
-}
-
-/* Header Banner */
-.banner {
-    background-color: #1F2A30; /* Deep Greenish Gray */
-    border-bottom: 2px solid #1F6F52; /* Emerald Green */
-}
-
-/* Skills Section */
-.skills-section {
-    background-color: #1F2A30;
-    border: 2px solid #1F6F52; 
-}
-
-/* Skills Boxes */
-.skill {
-    background-color: #1F6F52; 
-    color: #ffffff;
-    border: 2px solid #2A9D8F; 
-}
-
-
-
 
 
 .leadership-section {
