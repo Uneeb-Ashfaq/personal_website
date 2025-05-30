@@ -1,12 +1,12 @@
 /* These variables store color values for easy reusability */
 :root {
-    --text-color: #D1D1D1; /* Soft White */
-    --background-color: #121212; /* Dark Gray */
-    --button-color: #1F6F52; /* color for buttons transition */
-    --border-color: #2A9D8F; /* Light Green */
-    --section-bg: #1F2A30; /* Deep Greenish Gray */
-    --left-bg-color: #1F2A30; /* Left Side color*/
-    --right-bg-color: #2a2a2a; /* right side color  */
+    --text-color: #D1D1D1; 
+    --background-color: #121212;
+    --button-color: #1F6F52; 
+    --border-color: #2A9D8F; 
+    --section-bg: #1F2A30; 
+    --left-bg-color: #1F2A30; 
+    --right-bg-color: #2a2a2a; 
 }
 
 /* Reset margins & paddings for all elements */
@@ -24,10 +24,9 @@ html {
 
 /* Applies main font and background settings */
 body{ 
-    font-family: 'Poppins', sans-serif; /* Sets the font */
+    font-family: 'Poppins', sans-serif; 
     background-color: var(--background-color);
     color: var(--text-color);
-    margin: 0; /* Removes extra margin */
 }
 
 
@@ -43,8 +42,8 @@ a {
 /* Styles the main layout container */
 main {
     display: flex; /* Makes sections (left & right) appear side-by-side */
-    width: 100%; /* Full width of the screen */
-    height: 100vh; /* Full viewport height */
+    width: 100%; 
+    height: 100vh; 
     }
     
 
@@ -52,7 +51,7 @@ main {
 /* Styles the left side of the page */
 .left {
     background: var(--left-bg-color); 
-    width: 50%;  /* Takes up half of the screen width */
+    width: 50%;  
     display: flex; /* Enables flexbox for layout */
     flex-direction: column; /* Stacks all elements vertically */
     align-items: center; /* Centers content horizontally */
@@ -70,11 +69,11 @@ main {
 /* Styles the profile picture */
 .headshot img {
     width: 275px;
-    border-radius: 50%; /* Makes image circular */
+    border-radius: 50%; 
     border: 3px solid #ffffff;
-    position: relative; /* Allows position adjustments */
-    right: 20px; /* Moves image 20px to the right */
-    top: 10px; /* Moves image 10px to the down */
+    position: relative; 
+    right: 20px; 
+    top: 10px; 
     
 
 }
@@ -83,20 +82,20 @@ main {
 /* Styles the bio text */
  .bio {
     text-align: center; /* Centers text inside the bio */
-    width: 80%;   /* make paragraph length shorter so each line takes less space */
-    margin-top: 20px;  /* Adds space above the bio */
+    width: 80%;   
+    margin-top: 20px;  
 }
 
 
 /* Styles the social media links */
  .links {
-    display: flex;  /* Enables Flexbox */
-    justify-content: center; /* Centers icons horizontally */
-    align-items: center; /* Centers icons vertically */
-    gap: 40px; /* Adds space between icons */
-    margin-top: 100px; /* Moves links further down */
-    font-size: 50px;   /* Makes icons larger */
-    text-align: center;  /* Centers the links */
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    gap: 40px; 
+    margin-top: 100px; 
+    font-size: 50px;   
+    text-align: center;  
  }
 
 
@@ -107,8 +106,8 @@ main {
 /* Hover effects for social media icons */
 .links a:hover i{
     color: var(--button-color);
-    transform: scale(1.2);  /* Increases size slightly on hover */
-    transition: transform 0.3s, color 0.3s;/* Animation timings*/
+    transform: scale(1.2);  
+    transition: transform 0.3s, color 0.3s;
 }
 
 
@@ -117,25 +116,25 @@ main {
 /* Styles the right side of the page */
 .right{
     background: var(--right-bg-color);
-    width: 50%; /* Takes up half of the screen width */
+    width: 50%; 
     display: flex; /* Enables flexbox */
     flex-direction: column;/* Stacks content vertically */
     align-items: center; /* Centers content horizontally */
     justify-content: center; /* Centers content vertically */
-    padding: 20px; /* Adds padding */
+    padding: 20px;
     border-left: 4px solid var(--border-color);
 }
 
 /* Styles the text buttons inside the right section */
 .right .right_side_text h2{
     color: white;
-    margin-top: 40px; /* Adds space above each heading */
+    margin-top: 40px; 
     display: inline-block;  /* Ensures proper spacing */
     padding: 5px 10px; /* Adds padding inside the text box */
     border: 2px solid var(--text-color);
-    border-radius: 30px;  /* Rounds the edges */
-    transition: 0.1s; /*transition timing */
-    width: 425px;  /* Sets width for the text box */
+    border-radius: 30px;  
+    transition: 0.1s; 
+    width: 425px;  
     display: flex;  /* Enables flexbox for better alignment */
     align-items: center; /* Centers text vertically */
     justify-content: center; /* Centers text horizontally */
@@ -154,8 +153,50 @@ main {
     background-color: var(--button-color);
     color: black;
     border: 2px solid black;
-    transform: scale(1.07);  /* Slightly enlarges the box */
+    transform: scale(1.07);  
 }
 
 
+@media (max-width: 768px) {
+  main {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .left, .right {
+    width: 100%;
+    border: none;
+  }
+
+  .left {
+    border-bottom: 4px solid var(--border-color);
+  }
+
+  .right_side_text h2 {
+    width: 100%;
+    font-size: 20px;
+    padding: 10px;
+  }
+
+  .bio {
+    font-size: 16px;
+    width: 100%;
+    text-align: left;
+  }
+
+  .links {
+    flex-wrap: wrap;
+    gap: 20px;
+    font-size: 40px;
+    margin-top: 40px;
+  }
+
+  h2 {
+    font-size: 22px;
+  }
+
+  h4, p {
+    font-size: 16px;
+  }
+}
 
