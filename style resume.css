@@ -94,7 +94,8 @@ a {
 .experience-boxes {
     padding: 5px 10px; 
     border-radius: 20px;  
-    width: 1200px;  
+    width: 90%;  
+    max-width: 1200px;
     margin-bottom: 25px; 
     background-color: #2A2A2A; /* Darker Gray */
     border: 2px solid #2A9D8F; /* Emerald Green */
@@ -114,18 +115,22 @@ a {
     align-items: center;
     background-color: #1F2A30;
     border: 2px solid #1F6F52;
+    margin-bottom: 50px;
+
     
 }
 
 .leadership-section h2{
     text-align: center;
     margin-top: 10px;
+
 }
 
 .leadership-boxes {
     padding: 5px 10px; 
     border-radius: 20px;  
-    width: 1200px;  
+    width: 90%;  
+    max-width: 1200px;
     margin-top: 25px; 
     background-color: #2A2A2A; /* Darker Gray */
     border: 2px solid #2A9D8F; /* Emerald Green */
@@ -136,4 +141,37 @@ a {
     display: flex; 
     justify-content: space-between;
     align-items: center; 
+}
+
+
+@media (max-width: 768px) {
+    .skills-container {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .experience-header,
+    .leadership-header,
+    .volunteer-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 5px;
+    }
+
+    .skill {
+        font-size: 16px;
+        padding: 8px;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
+    h4 {
+        font-size: 18px;
+    }
+
+    p {
+        font-size: 16px;
+    }
 }
